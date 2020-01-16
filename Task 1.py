@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 64,
+   "execution_count": 23,
    "metadata": {
     "pycharm": {
      "is_executing": false
@@ -18,7 +18,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 65,
+   "execution_count": 24,
    "metadata": {
     "pycharm": {
      "is_executing": false
@@ -42,21 +42,50 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 66,
+   "execution_count": 25,
    "metadata": {
     "pycharm": {
      "is_executing": false
     }
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "text": [
+      "[[[ 0  0  0  0  0  0  0]\n",
+      "  [ 0  0  0  0  0  0  0]\n",
+      "  [ 0  0  0  0  0  0  0]\n",
+      "  [ 0  0  0  0  0  0  0]\n",
+      "  [ 5  3  5  3  4  7  3]\n",
+      "  [ 8  9  1  9  0  5  4]\n",
+      "  [ 3  9  6  5 10 10  8]\n",
+      "  [ 3  7  6  2  3  9  5]\n",
+      "  [ 2  9  5  5  8  6  0]\n",
+      "  [10  4  2  5  3  5  5]]\n",
+      "\n",
+      " [[ 0  0  0  0  0  0  0]\n",
+      "  [ 0  0  0  0  0  0  0]\n",
+      "  [ 0  0  0  0  0  0  0]\n",
+      "  [ 0  0  0  0  0  0  0]\n",
+      "  [ 3  4  7  7  3  9  4]\n",
+      "  [ 4  8  6  4  8  5  0]\n",
+      "  [10  5  5  8  6  0  5]\n",
+      "  [ 9  5  2  0  9  6  4]\n",
+      "  [10  7  7  3 10  6  9]\n",
+      "  [ 9 10  5  4  4  9 10]]]\n"
+     ],
+     "output_type": "stream"
+    }
+   ],
    "source": [
     "df = create_dummy_df(2, 10, 7)\n",
+    "print(df)\n",
     "# df = pd.DataFrame(data = df_array)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 67,
+   "execution_count": 26,
    "metadata": {
     "pycharm": {
      "is_executing": false
@@ -71,7 +100,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 68,
+   "execution_count": 27,
    "metadata": {
     "pycharm": {
      "is_executing": false
@@ -92,7 +121,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 69,
+   "execution_count": 28,
    "metadata": {
     "pycharm": {
      "is_executing": false
@@ -101,11 +130,11 @@
    "outputs": [
     {
      "data": {
-      "text/plain": "(11, 2, array([[[ 7, 10,  1,  0,  6,  6,  5],\n         [ 8,  2,  6,  6,  4,  1,  3]],\n \n        [[ 8,  2,  6,  6,  4,  1,  3],\n         [ 8,  5,  3,  0,  6,  4,  7]],\n \n        [[ 8,  5,  3,  0,  6,  4,  7],\n         [ 6,  0,  9,  2,  8,  0,  6]],\n \n        [[ 7,  6,  4,  9,  2,  2,  3],\n         [ 2,  6,  5,  2,  7,  7,  9]],\n \n        [[ 2,  6,  5,  2,  7,  7,  9],\n         [ 4,  1,  1,  0,  3,  7,  1]],\n \n        [[ 4,  1,  1,  0,  3,  7,  1],\n         [ 3,  0,  0,  0, 10,  8,  1]],\n \n        [[ 3,  0,  0,  0, 10,  8,  1],\n         [ 8, 10,  8,  4, 10,  9,  9]],\n \n        [[ 8, 10,  8,  4, 10,  9,  9],\n         [ 5,  3,  7,  7,  0, 10,  2]],\n \n        [[ 5,  3,  7,  7,  0, 10,  2],\n         [ 4,  5,  1,  5,  5,  0,  4]],\n \n        [[ 4,  5,  1,  5,  5,  0,  4],\n         [ 5,  9,  8, 10,  1,  0,  8]],\n \n        [[ 5,  9,  8, 10,  1,  0,  8],\n         [ 1,  0,  0,  1, 10,  1,  6]]]))"
+      "text/plain": "(10, 2, array([[[ 5,  3,  5,  3,  4,  7,  3],\n         [ 8,  9,  1,  9,  0,  5,  4]],\n \n        [[ 8,  9,  1,  9,  0,  5,  4],\n         [ 3,  9,  6,  5, 10, 10,  8]],\n \n        [[ 3,  9,  6,  5, 10, 10,  8],\n         [ 3,  7,  6,  2,  3,  9,  5]],\n \n        [[ 3,  7,  6,  2,  3,  9,  5],\n         [ 2,  9,  5,  5,  8,  6,  0]],\n \n        [[ 2,  9,  5,  5,  8,  6,  0],\n         [10,  4,  2,  5,  3,  5,  5]],\n \n        [[ 3,  4,  7,  7,  3,  9,  4],\n         [ 4,  8,  6,  4,  8,  5,  0]],\n \n        [[ 4,  8,  6,  4,  8,  5,  0],\n         [10,  5,  5,  8,  6,  0,  5]],\n \n        [[10,  5,  5,  8,  6,  0,  5],\n         [ 9,  5,  2,  0,  9,  6,  4]],\n \n        [[ 9,  5,  2,  0,  9,  6,  4],\n         [10,  7,  7,  3, 10,  6,  9]],\n \n        [[10,  7,  7,  3, 10,  6,  9],\n         [ 9, 10,  5,  4,  4,  9, 10]]]))"
      },
      "metadata": {},
      "output_type": "execute_result",
-     "execution_count": 69
+     "execution_count": 28
     }
    ],
    "source": [
@@ -114,7 +143,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 69,
+   "execution_count": 28,
    "metadata": {
     "pycharm": {
      "is_executing": false
@@ -125,7 +154,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 69,
+   "execution_count": 28,
    "metadata": {
     "pycharm": {
      "is_executing": false
