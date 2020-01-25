@@ -36,14 +36,23 @@ distance_calculator.py contains other meteric calculation. (Commented out for no
 **Future Work:**
 
 We can use these distance metrics too.
+
 Frobenium Norm
+
 L2 Norm
+
 Wasserstein Distance
+
 Frechet Inception Distance
+
 Students T-test
+
 Kolmogorov-Smir
+
 Shapiro-Wilk Test
+
 Anderson-Darling Test
+
 
 
 
