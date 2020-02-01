@@ -39,6 +39,7 @@ main.py is used to start the program. We can set the name of disease name, heade
 data_gen.py It is used for calculating the needed rows from CD and finding the same in OD.
 
 Error for Single Disease VS Synthetic Data: 0.21992789160162024
+
 Error for Rest Diseases VS Synthetic Data: 0.23252348233463457
 
 
